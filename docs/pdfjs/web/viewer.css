@@ -6418,3 +6418,19 @@ dialog :link{
     display:none;
   }
 }
+/* Hide all toolbar / UI elements */
+#toolbarContainer,
+#secondaryToolbar,
+#sidebarContainer,
+#findBar,
+#toolbarViewer,
+.toolbar,
+.secondaryToolbar,
+.findbar,
+.findbarInputContainer {
+  display: none !important;
+}
+/* Push the PDF content all the way to the top */
+#viewerContainer {
+  top: 0 !important;
+}
