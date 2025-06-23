@@ -27,6 +27,36 @@ See https://github.com/adobe-type-tools/cmap-resources
     <meta name="google" content="notranslate">
     <title>PDF.js viewer</title>
 
+ <!-- INSERTED CUSTOM CSS TO HIDE TOOLBARS -->
+  <style>
+    /* Hide top toolbar and related UI elements */
+    #toolbarContainer,
+    .toolbar,
+    .secondaryToolbar,
+    #editorModeSeparator,
+    #editorModeButtons,
+    #editorInkParamsToolbar,
+    #editorHighlightParamsToolbar,
+    #editorFreeTextParamsToolbar,
+    #editorStampParamsToolbar,
+    #findbar,
+    #findbarOptionsOneContainer,
+    #findbarOptionsTwoContainer,
+    #findbarMessageContainer,
+    #viewFindButton,
+    #printButton,
+    #downloadButton,
+    #secondaryToolbarToggle,
+    #sidebarToggleButton {
+      display: none !important;
+    }
+
+    /* Make sure PDF uses full space */
+    #viewerContainer {
+      top: 0 !important;
+    }
+  </style>
+
 <!-- This snippet is used in production (included from viewer.html) -->
 <link rel="resource" type="application/l10n" href="locale/locale.json">
 <script src="../build/pdf.mjs" type="module"></script>
