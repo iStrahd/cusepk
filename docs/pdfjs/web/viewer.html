@@ -32,7 +32,24 @@ See https://github.com/adobe-type-tools/cmap-resources
 <script src="../build/pdf.mjs" type="module"></script>
 
     <link rel="stylesheet" href="viewer.css">
-
+<style>
+  /* FORCE-HIDE PDF.js Toolbars */
+  #toolbarContainer,
+  #secondaryToolbar,
+  #sidebarContainer,
+  #findBar,
+  #toolbarViewer,
+  .toolbarViewer,
+  .secondaryToolbar,
+  .findbar {
+    display: none !important;
+  }
+  /* Lift the content up to hiding the toolbar gap */
+  #viewerContainer {
+    top: 0 !important;
+  }
+</style>
+<script src="viewer.js" type="module"></script>
   <script src="viewer.mjs" type="module"></script>
   </head>
 
